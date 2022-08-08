@@ -7,3 +7,105 @@
 html {
   font-size: 62.5%;
 }
+
+:root {
+  --blue-light: #e0e8ff;
+  --blue-bright: #3829e0;
+  --blue-v-light: #f5f7ff;
+  --blue-desaturated: #7280a7;
+  --blue-dark: #1f2f56;
+  --white: #fff
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-image: url("/images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: var(--blue-light);
+  min-height: 100vh;
+  font-size: 1.6rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: var(--white);
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.text-container {
+  max-width: 45rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem 5rem;
+}
+
+.title {
+  font-size: 2.6rem;
+  color: var(--blue-dark);
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+.content {
+  text-align: center;
+  color: var(--blue-desaturated);
+}
+
+.plan {
+  background-color: var(--blue-v-light);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 2rem;
+  border-radius: 1rem;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.change {
+  margin-left: auto;
+  font-size: 1.4rem;
+  color: var(--blue-bright);
+  font-weight: 900;
+  transition: all 0.4s;
+}
+
+.price-container p {
+  color: var(--blue-dark);
+  font-size: 1.6rem;
+  font-weight: 900;
+  letter-spacing: -0.6px;
+}
+
+.price-container span {
+  font-size: 1.4rem;
+  color: var(--blue-desaturated);
+  letter-spacing: 0.6px;
+}
+
+.btn {
+  border: none;
+  color: var(--blue-v-light);
+  width: 100%;
+  border-radius: 1rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 1.5rem;
+  margin: 1rem 0;
+}
+
+.btn-filled {
+  background-color: var(--blue-bright);
+  box-shadow: 0 12px 18px 1px rgba(0, 0, 0, 0.09);
+}
+
+.btn-outline {
+  background-color: var(--white);
+  color: var(--blue-desaturated);
+}

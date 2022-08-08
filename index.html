@@ -4,11 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Order summary card</title>
   </head>
   <body>
-    <main>
+    <main class="container">
       <div class="img-container">
         <img src="./images/illustration-hero.svg" alt="" />
       </div>
@@ -19,10 +26,16 @@
           any device anywhere you like!
         </p>
         <div class="plan">
-          <img src="./images/icon-music.svg" alt="" />
-          <p>Annual Plan</p>
-          <span>$59.99/year</span>
-          <a href="#">Change</a>
+          <img
+            class="music-icon"
+            src="./images/icon-music.svg"
+            alt="music icon"
+          />
+          <div class="price-container">
+            <p>Annual Plan</p>
+            <span>$59.99/year</span>
+          </div>
+          <a href="#" class="change">Change</a>
         </div>
         <button class="btn btn-filled">Proceed to Payment</button>
         <button class="btn btn-outline">Cancel Order</button>
