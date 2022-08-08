@@ -31,6 +31,12 @@ body {
   align-items: center;
 }
 
+@media (max-width:600px) {
+  body {
+    background-image: url("/images/pattern-background-mobile.svg");
+  }
+}
+
 .container {
   background-color: var(--white);
   border-radius: 2rem;
